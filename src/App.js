@@ -1,25 +1,35 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import Weather from './component/weather';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+const App = () => {
+  // const [city, setCity] = useState('');
+
+  // const handleChange = (e) => {
+  //   setCity(e.target.value);
+  // };
+
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   // You can add validation here to check if the city is not empty
+  // };
+
+   return (
+  //   <div className="app">
+  //     <h1>Weather App</h1>
+  //     <form onSubmit={handleSubmit}>
+  //       <input
+  //         type="text"
+  //         placeholder="Enter city name"
+  //         value={city}
+  //         onChange={handleChange}
+  //       />
+  //       <button type="submit">Get Weather</button>
+  //     </form>
+  //     <Weather city={city} />
+  //   </div>
+       <Weather/>
   );
-}
+};
 
 export default App;
